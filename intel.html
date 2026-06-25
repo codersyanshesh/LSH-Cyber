@@ -71,121 +71,123 @@
       </p>
     </div>
 
-    <div class="about-grid">
-
-      <!-- Left: Info Panels -->
-      <div>
-        <div class="intel-panel reveal reveal-delay-1" aria-label="Personal identification data">
-          <div class="intel-panel-title">IDENTIFICATION DATA</div>
-          <div class="info-row">
-            <span class="info-label">FULL NAME</span>
-            <span class="info-value">Leslie S. Hular</span>
-          </div>
-          <div class="info-row">
-            <span class="info-label">INSTITUTION</span>
-            <span class="info-value highlight">PUP Lopez, Quezon</span>
-          </div>
-          <div class="info-row">
-            <span class="info-label">DEGREE</span>
-            <span class="info-value">BS Information Technology</span>
-          </div>
-          <div class="info-row">
-            <span class="info-label">YEAR LEVEL</span>
-            <span class="info-value">4th Year (Final Year)</span>
-          </div>
-          <div class="info-row">
-            <span class="info-label">EXPECTED GRAD</span>
-            <span class="info-value gold">September 2026</span>
-          </div>
-          <div class="info-row">
-            <span class="info-label">SPECIALIZATION</span>
-            <span class="info-value highlight">Cybersecurity — Blue Team</span>
-          </div>
-          <div class="info-row">
-            <span class="info-label">CURRENT STATUS</span>
-            <span class="info-value green">Active · Ongoing Training</span>
-          </div>
+    <div class="bento-grid">
+      
+      <!-- Panel 1: Identification Data -->
+      <div class="bento-item bento-id intel-panel reveal reveal-delay-1" data-scanner>
+        <div class="intel-panel-title">[ IDENTIFICATION DATA ]</div>
+        <div class="info-row">
+          <span class="info-label">FULL NAME</span>
+          <span class="info-value">Leslie S. Hular</span>
         </div>
+        <div class="info-row">
+          <span class="info-label">INSTITUTION</span>
+          <span class="info-value highlight">PUP Lopez, Quezon</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">DEGREE</span>
+          <span class="info-value">BS Information Technology</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">YEAR LEVEL</span>
+          <span class="info-value">4th Year (Final Year)</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">EXPECTED GRAD</span>
+          <span class="info-value gold">September 2026</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">SPECIALIZATION</span>
+          <span class="info-value highlight">Cybersecurity — Blue Team</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">CURRENT STATUS</span>
+          <span class="info-value green">Active · Ongoing Training</span>
+        </div>
+      </div>
 
-        <div class="intel-panel reveal reveal-delay-2" style="margin-top:20px;" aria-label="Professional capabilities">
-          <div class="intel-panel-title">CAPABILITY MATRIX</div>
-          <div class="skill-bars">
+      <!-- Panel 2: 3D Tactical Display (NEW) -->
+      <div class="bento-item bento-3d intel-panel reveal reveal-delay-2" data-scanner>
+        <div class="intel-panel-title">[ TACTICAL VISUALIZATION ]</div>
+        <div id="intel-3d-canvas" style="width:100%; height:100%; min-height: 280px; position: relative; z-index: 2;"></div>
+        <div class="hud-overlay" style="position: absolute; bottom: 20px; left: 20px; right: 20px; display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 0.65rem; color: var(--cyber-teal); pointer-events: none; z-index: 3;">
+          <span class="hud-text">SYS.ONLINE</span>
+          <span class="hud-text blink" style="animation: cursor-blink 1s infinite;">SCANNING...</span>
+        </div>
+      </div>
 
-            <div class="skill-bar-item">
-              <div class="skill-bar-head">
-                <span class="skill-bar-name">Threat Detection & SOC Operations</span>
-                <span class="skill-bar-pct">82%</span>
-              </div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" style="width:0" data-width="82%"></div>
-              </div>
+      <!-- Panel 3: Capability Matrix -->
+      <div class="bento-item bento-skills intel-panel reveal reveal-delay-3" data-scanner>
+        <div class="intel-panel-title">[ CAPABILITY MATRIX ]</div>
+        <div class="skill-bars">
+          <div class="skill-bar-item">
+            <div class="skill-bar-head">
+              <span class="skill-bar-name">Threat Detection & SOC Operations</span>
+              <span class="skill-bar-pct">82%</span>
             </div>
-
-            <div class="skill-bar-item">
-              <div class="skill-bar-head">
-                <span class="skill-bar-name">WAF / Web Application Security</span>
-                <span class="skill-bar-pct">75%</span>
-              </div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" style="width:0" data-width="75%"></div>
-              </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width:0" data-width="82%"></div>
             </div>
-
-            <div class="skill-bar-item">
-              <div class="skill-bar-head">
-                <span class="skill-bar-name">GRC & Compliance Reporting</span>
-                <span class="skill-bar-pct">78%</span>
-              </div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" style="width:0" data-width="78%"></div>
-              </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-head">
+              <span class="skill-bar-name">WAF / Web Application Security</span>
+              <span class="skill-bar-pct">75%</span>
             </div>
-
-            <div class="skill-bar-item">
-              <div class="skill-bar-head">
-                <span class="skill-bar-name">Endpoint Security (EAS)</span>
-                <span class="skill-bar-pct">72%</span>
-              </div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill" style="width:0" data-width="72%"></div>
-              </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width:0" data-width="75%"></div>
             </div>
-
-            <div class="skill-bar-item">
-              <div class="skill-bar-head">
-                <span class="skill-bar-name">Technical Communication & Reporting</span>
-                <span class="skill-bar-pct">88%</span>
-              </div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill gold-fill" style="width:0" data-width="88%"></div>
-              </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-head">
+              <span class="skill-bar-name">GRC & Compliance Reporting</span>
+              <span class="skill-bar-pct">78%</span>
             </div>
-
-            <div class="skill-bar-item">
-              <div class="skill-bar-head">
-                <span class="skill-bar-name">Collaboration & Team Operations</span>
-                <span class="skill-bar-pct">92%</span>
-              </div>
-              <div class="skill-bar-track">
-                <div class="skill-bar-fill gold-fill" style="width:0" data-width="92%"></div>
-              </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width:0" data-width="78%"></div>
             </div>
-
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-head">
+              <span class="skill-bar-name">Endpoint Security (EAS)</span>
+              <span class="skill-bar-pct">72%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width:0" data-width="72%"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-head">
+              <span class="skill-bar-name">Technical Communication & Reporting</span>
+              <span class="skill-bar-pct">88%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill gold-fill" style="width:0" data-width="88%"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-head">
+              <span class="skill-bar-name">Collaboration & Team Operations</span>
+              <span class="skill-bar-pct">92%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill gold-fill" style="width:0" data-width="92%"></div>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Right: Blue Team Pillars -->
-      <div class="reveal reveal-delay-2">
-        <div class="intel-panel" aria-label="Blue team operational pillars">
-          <div class="intel-panel-title">OPERATIONAL PILLARS</div>
-          <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.7;margin-bottom:20px;">
+      <!-- Panel 4: Operational Pillars -->
+      <div class="bento-item bento-pillars reveal reveal-delay-4">
+        <div class="intel-panel" aria-label="Blue team operational pillars" style="margin-bottom: 20px;" data-scanner>
+          <div class="intel-panel-title">[ OPERATIONAL PILLARS ]</div>
+          <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.7;margin-bottom:12px;">
             More than a student — a practitioner. At Northstar Cyber Management Inc., I operated in
             a real production SOC environment, handling live client alerts with strict time-based SLAs.
             Every second counted. Every decision mattered. I learned to carry the weight of
             accountability — and I thrive under that pressure.
           </p>
-          <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.7;margin-bottom:24px;">
+          <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.7;">
             I am both <strong style="color:var(--cyber-teal)">proactive</strong> — hunting threats before they manifest —
             and <strong style="color:var(--gold-alert)">reactive</strong> — neutralizing confirmed attacks
             with speed and precision. This dual posture is what Accenture's Security practice demands,
@@ -194,40 +196,40 @@
         </div>
 
         <div class="pillars-grid" role="list">
-          <div class="pillar-card reveal reveal-delay-1" role="listitem">
+          <div class="pillar-card" role="listitem">
             <span class="pillar-icon" aria-hidden="true">⚡</span>
             <div class="pillar-title">TIME TO OWN</div>
-            <p class="pillar-desc">Sub-60 second alert response across 5 kill chain stages. Precision under pressure is my standard.</p>
+            <p class="pillar-desc">Sub-60s alert response across 5 kill chain stages.</p>
           </div>
-          <div class="pillar-card reveal reveal-delay-2" role="listitem">
+          <div class="pillar-card" role="listitem">
             <span class="pillar-icon" aria-hidden="true">📡</span>
             <div class="pillar-title">THREAT HUNTING</div>
-            <p class="pillar-desc">Proactively scanning for adversary TTPs across Initial Access through Exfiltration stages.</p>
+            <p class="pillar-desc">Scanning for adversary TTPs proactively.</p>
           </div>
-          <div class="pillar-card reveal reveal-delay-3" role="listitem">
+          <div class="pillar-card" role="listitem">
             <span class="pillar-icon" aria-hidden="true">🔒</span>
             <div class="pillar-title">GRC COMPLIANCE</div>
-            <p class="pillar-desc">EOM reports, risk assessments, and governance documentation aligned to organizational standards.</p>
+            <p class="pillar-desc">EOM reports & risk assessments aligned to standards.</p>
           </div>
-          <div class="pillar-card reveal reveal-delay-4" role="listitem">
+          <div class="pillar-card" role="listitem">
             <span class="pillar-icon" aria-hidden="true">🤝</span>
             <div class="pillar-title">TEAM OPERATIONS</div>
-            <p class="pillar-desc">Communication, coordination, and shared accountability — the core of effective SOC teamwork.</p>
+            <p class="pillar-desc">Communication and shared SOC accountability.</p>
           </div>
-          <div class="pillar-card reveal reveal-delay-1" role="listitem">
+          <div class="pillar-card" role="listitem">
             <span class="pillar-icon" aria-hidden="true">🌐</span>
             <div class="pillar-title">WEB DEFENSE</div>
-            <p class="pillar-desc">WAF management and endpoint protection operations supporting enterprise-grade client environments.</p>
+            <p class="pillar-desc">WAF and endpoint protection for enterprises.</p>
           </div>
-          <div class="pillar-card reveal reveal-delay-2" role="listitem">
+          <div class="pillar-card" role="listitem">
             <span class="pillar-icon" aria-hidden="true">📈</span>
             <div class="pillar-title">GROWTH DRIVEN</div>
-            <p class="pillar-desc">Ongoing training post-OJT, pursuing apprenticeship and professional certifications with full commitment.</p>
+            <p class="pillar-desc">Ongoing training and pursuing certifications.</p>
           </div>
         </div>
       </div>
 
-    </div><!-- /about-grid -->
+    </div><!-- /bento-grid -->
   </div>
 </section>
 </main>
@@ -262,6 +264,7 @@
         crossorigin="anonymous"></script>
 
 <script src="js/network-globe.js" defer></script>
+<script src="js/intel-3d.js" defer></script>
 <script src="js/app.js" defer></script>
 
 </body>
