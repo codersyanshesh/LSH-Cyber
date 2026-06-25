@@ -84,26 +84,72 @@ if (typeof emailjs !== 'undefined' && EMAILJS_PUBLIC_KEY !== 'YOUR_PUBLIC_KEY') 
 /* ─── SMOOTH SCROLL (REMOVED) ─────────────────────────────── */
 // Removed because navigation is now multi-page.
 
-/* ─── NAV RIPPLE CLICK EFFECT ─────────────────────────────── */
-(function initNavRipple() {
+/* ─── CYBER NAV CLICK EFFECTS ──────────────────────────────── */
+(function initCyberNavEffects() {
+  const HEX_CHARS = ['0x', 'FF', 'A3', '//','01','<<','>>','{}','&&','!$','7F','3E','1C','4B','D2','0F'];
+
+  // ── Helper: create a fixed-position element ──────────────────
+  function createFixed(cls, x, y) {
+    const el = document.createElement('div');
+    el.classList.add(cls);
+    el.style.left = x + 'px';
+    el.style.top  = y + 'px';
+    document.body.appendChild(el);
+    return el;
+  }
+
+  // ── Radar Ping: 3 staggered concentric rings ─────────────────
+  function radarPing(x, y) {
+    [0, 120, 240].forEach(delay => {
+      const ring = createFixed('nav-radar-ring', x, y);
+      ring.style.animationDelay = delay + 'ms';
+      ring.addEventListener('animationend', () => ring.remove(), { once: true });
+    });
+  }
+
+  // ── Hex Particle Burst ───────────────────────────────────────
+  function hexBurst(x, y) {
+    const count = 12;
+    for (let i = 0; i < count; i++) {
+      const angle = (i / count) * Math.PI * 2;
+      const dist  = 40 + Math.random() * 50;
+      const tx = Math.cos(angle) * dist;
+      const ty = Math.sin(angle) * dist;
+      const particle = document.createElement('div');
+      particle.classList.add('hex-particle');
+      if (Math.random() > 0.5) particle.classList.add('gold');
+      particle.textContent = HEX_CHARS[Math.floor(Math.random() * HEX_CHARS.length)];
+      particle.style.left = x + 'px';
+      particle.style.top  = y + 'px';
+      particle.style.setProperty('--tx', tx + 'px');
+      particle.style.setProperty('--ty', ty + 'px');
+      particle.style.animationDelay = (Math.random() * 80) + 'ms';
+      document.body.appendChild(particle);
+      particle.addEventListener('animationend', () => particle.remove(), { once: true });
+    }
+  }
+
+  // ── Glitch: briefly glitch the link text ─────────────────────
+  function glitchLink(link) {
+    link.classList.add('nav-glitch-active');
+    link.addEventListener('animationend', () => link.classList.remove('nav-glitch-active'), { once: true });
+  }
+
+  // ── Attach events ─────────────────────────────────────────────
   document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', function(e) {
-      // Remove any old ripple
-      const old = this.querySelector('.nav-ripple');
-      if (old) old.remove();
+      const x = e.clientX;
+      const y = e.clientY;
+      const isCTA = this.classList.contains('nav-cta');
 
-      const rect = this.getBoundingClientRect();
-      const size = Math.max(rect.width, rect.height) * 2;
-      const x = e.clientX - rect.left - size / 2;
-      const y = e.clientY - rect.top - size / 2;
-
-      const ripple = document.createElement('span');
-      ripple.classList.add('nav-ripple');
-      ripple.style.cssText = `width:${size}px;height:${size}px;left:${x}px;top:${y}px;`;
-      this.appendChild(ripple);
-
-      // Clean up after animation finishes
-      ripple.addEventListener('animationend', () => ripple.remove());
+      if (isCTA) {
+        // CONNECT button → hex particle scatter
+        hexBurst(x, y);
+      } else {
+        // Regular nav links → staggered radar ping rings + glitch
+        radarPing(x, y);
+        glitchLink(this);
+      }
     });
   });
 })();

@@ -226,29 +226,58 @@ body::before {
   transition: all 0.25s var(--transition);
 }
 
-/* Ripple effect on all nav links */
-.nav-links a {
-  overflow: hidden;
-}
+/* ─── CYBER CLICK EFFECTS ─────────────────────────────────── */
 
-.nav-ripple {
-  position: absolute;
+/* Radar Ping Rings (regular nav links) */
+.nav-radar-ring {
+  position: fixed;
   border-radius: 50%;
-  background: rgba(0, 200, 255, 0.35);
-  transform: scale(0);
-  animation: nav-ripple-anim 0.55s linear;
+  border: 2px solid var(--cyber-teal);
   pointer-events: none;
+  z-index: 9998;
+  animation: radar-expand 0.7s cubic-bezier(0.2, 0.8, 0.4, 1) forwards;
+  box-shadow: 0 0 8px var(--cyber-teal), inset 0 0 8px rgba(0,200,255,0.2);
 }
 
-.nav-cta .nav-ripple {
-  background: rgba(255,255,255,0.4);
+@keyframes radar-expand {
+  from { width: 0; height: 0; opacity: 1; transform: translate(-50%, -50%); }
+  to   { width: 80px; height: 80px; opacity: 0; transform: translate(-50%, -50%); }
 }
 
-@keyframes nav-ripple-anim {
-  to {
-    transform: scale(4);
-    opacity: 0;
-  }
+/* Hex Particle Scatter (CONNECT button) */
+.hex-particle {
+  position: fixed;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--cyber-teal);
+  pointer-events: none;
+  z-index: 9998;
+  animation: hex-scatter 0.8s ease-out forwards;
+  text-shadow: 0 0 6px var(--cyber-teal);
+}
+
+.hex-particle.gold {
+  color: var(--gold-alert);
+  text-shadow: 0 0 6px var(--gold-alert);
+}
+
+@keyframes hex-scatter {
+  0%   { opacity: 1; transform: translate(0,0) scale(1); }
+  100% { opacity: 0; transform: translate(var(--tx), var(--ty)) scale(0.4); }
+}
+
+/* Glitch flash on nav link text */
+@keyframes nav-glitch {
+  0%   { clip-path: inset(40% 0 50% 0); transform: translate(-3px, 0); }
+  20%  { clip-path: inset(10% 0 80% 0); transform: translate(3px, 0); }
+  40%  { clip-path: inset(70% 0 10% 0); transform: translate(-2px, 0); }
+  60%  { clip-path: inset(30% 0 60% 0); transform: translate(2px, 0); }
+  80%  { clip-path: inset(60% 0 20% 0); transform: translate(-1px, 0); }
+  100% { clip-path: inset(0 0 0 0); transform: translate(0, 0); }
+}
+
+.nav-glitch-active {
+  animation: nav-glitch 0.3s steps(1) forwards;
 }
 
 /* Hamburger */
