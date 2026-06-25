@@ -24,7 +24,7 @@ if (typeof emailjs !== 'undefined' && EMAILJS_PUBLIC_KEY !== 'YOUR_PUBLIC_KEY') 
     'GRC & Compliance Practitioner',
     'WAF & EAS Defender',
     'Threat Intelligence Operator',
-    'Future Accenture Innovator'
+    'UI/UX Designer'
   ];
   let pi = 0, ci = 0, deleting = false;
   function tick() {
