@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO -->
+  <title>Leslie S. Hular | Cybersecurity Analyst | Blue Team Portfolio</title>
+  <meta name="description" content="Portfolio of Leslie S. Hular — SOC Analyst, Blue Team Defender, GRC Practitioner & aspiring Accenture Cybersecurity professional. PUP Lopez | Northstar Cyber Management Inc." />
+  <meta name="keywords" content="Leslie Hular, Cybersecurity, SOC Analyst, Blue Team, GRC, WAF, EAS, Northstar, Accenture, BSIT, PUP" />
+  <meta name="author" content="Leslie S. Hular" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Leslie S. Hular | Cybersecurity Analyst Portfolio" />
+  <meta property="og:description" content="Blue Team SOC Analyst passionate about threat detection, GRC compliance, and making the digital world safer." />
+  <meta property="og:type" content="website" />
+
+  <!-- Security Headers -->
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://api.emailjs.com;" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+
+  <!-- Favicon (inline SVG as data URI) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23020810'/><text x='5' y='24' font-size='22'>🛡</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Share+Tech+Mono&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body id="page-vault">
+
+<!-- ─── BACKGROUND ─────────────────────────────────────────── -->
+<div id="bg-grid" aria-hidden="true"></div>
+<canvas id="network-canvas" aria-hidden="true"></canvas>
+
+<!-- ─── NAVBAR ─────────────────────────────────────────────── -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="nav-brand" aria-label="Leslie S. Hular Home">
+    <div class="nav-brand-icon" aria-hidden="true">🛡</div>
+    LSH<span style="color:var(--text-dim);font-weight:400;">.CYBER</span>
+  </a>
+
+  <button id="nav-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <ul class="nav-links" id="nav-links" role="list">
+    <li><a href="intel.html"         data-index="01" aria-label="About section">INTEL</a></li>
+    <li><a href="field-ops.html"    data-index="02" aria-label="Experience section">FIELD OPS</a></li>
+    <li><a href="tto-sim.html" data-index="03" aria-label="TTO Simulator section">TTO SIM</a></li>
+    <li><a href="projects.html"      data-index="04" aria-label="Projects section">PROJECTS</a></li>
+    <li><a href="vault.html"  data-index="05" aria-label="Certificates section">VAULT</a></li>
+    <li><a href="connect.html" class="nav-cta" data-index="06" aria-label="Contact section">CONNECT</a></li>
+  </ul>
+</nav>
+
+<main>
+<section id="certificates" aria-label="Certificates and credentials">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-tag">CREDENTIAL VAULT</div>
+      <h2 class="section-title">Certifications &amp; <span>Achievements</span></h2>
+      <p class="section-subtitle">
+        Every credential tells a story of deliberate growth. These are milestones on a journey that is still accelerating.
+      </p>
+    </div>
+
+    <div class="cert-vault-label reveal">
+      🔐 VERIFIED CREDENTIALS — CLICK ANY CERTIFICATE TO INSPECT
+    </div>
+
+    <div class="certs-grid">
+
+      <!-- Northstar Completion (Most Important) -->
+      <div class="cert-card reveal reveal-delay-1"
+           role="button"
+           tabindex="0"
+           aria-label="View Northstar Certificate of Completion"
+           data-img="assets/cert_northstar.png"
+           data-name="Certificate of Completion — Northstar Cyber Management Inc."
+           data-meta="Issued May 10, 2026 · 500 Hours Internship · ATRACaaS | SOC Operations, WAF, EAS, GRC">
+        <img src="assets/cert_northstar.png"
+             alt="Certificate of Completion from Northstar Cyber Management Inc. for Leslie S. Hular"
+             class="cert-thumbnail"
+             loading="lazy" />
+        <div class="cert-info">
+          <div class="cert-org">⭐ NORTHSTAR CYBER MANAGEMENT INC.</div>
+          <div class="cert-name">Certificate of Completion — 500 Hours Internship</div>
+          <div class="cert-date">📅 May 10, 2026 · ATRACaaS Program</div>
+        </div>
+        <div class="cert-view-overlay" aria-hidden="true">🔍 VIEW CREDENTIAL</div>
+      </div>
+
+      <!-- Kwentuhang Cybersecurity -->
+      <div class="cert-card reveal reveal-delay-2"
+           role="button"
+           tabindex="0"
+           aria-label="View Kwentuhang Cybersecurity Certificate"
+           data-img="assets/cert_laws.png"
+           data-name="Kwentuhang Cybersecurity: Digital Privacy & Cyber Laws in the Philippines"
+           data-meta="Issued March 14, 2025 · Philippine Institute of Cyber Security Professionals (PICSP) · Member ID: 1753-2024">
+        <img src="assets/cert_laws.png"
+             alt="Certificate of Attendance from Philippine Institute of Cyber Security Professionals for Kwentuhang Cybersecurity"
+             class="cert-thumbnail"
+             loading="lazy" />
+        <div class="cert-info">
+          <div class="cert-org">🇵🇭 PICSP — PHILIPPINE INSTITUTE OF CYBER SECURITY</div>
+          <div class="cert-name">Kwentuhang Cybersecurity: Digital Privacy &amp; Cyber Laws (RA 10173 &amp; RA 10175)</div>
+          <div class="cert-date">📅 March 14, 2025</div>
+        </div>
+        <div class="cert-view-overlay" aria-hidden="true">🔍 VIEW CREDENTIAL</div>
+      </div>
+
+      <!-- DICT Data Analytics -->
+      <div class="cert-card reveal reveal-delay-3"
+           role="button"
+           tabindex="0"
+           aria-label="View DICT Digital Literacy Certificate"
+           data-img="assets/cert_dict.png"
+           data-name="DICT: Digital Literacy Training — Introduction to Data Analytics"
+           data-meta="Issued January 23, 2023 · DICT Region IV-A and IV-B · Free Wi-Fi for All Program">
+        <img src="assets/cert_dict.png"
+             alt="Certificate of Participation from DICT for Digital Literacy Training in Data Analytics"
+             class="cert-thumbnail"
+             loading="lazy" />
+        <div class="cert-info">
+          <div class="cert-org">🏛 DICT — DEPARTMENT OF INFORMATION &amp; COMMUNICATIONS TECHNOLOGY</div>
+          <div class="cert-name">Digital Literacy Training: Introduction to Data Analytics</div>
+          <div class="cert-date">📅 January 23, 2023 · Region IV-A &amp; IV-B</div>
+        </div>
+        <div class="cert-view-overlay" aria-hidden="true">🔍 VIEW CREDENTIAL</div>
+      </div>
+
+      <!-- LinkedIn Learning -->
+      <div class="cert-card reveal reveal-delay-4"
+           role="button"
+           tabindex="0"
+           aria-label="View LinkedIn Learning Certificate"
+           data-img="assets/cert_linkedin.png"
+           data-name="Tech Career Skills: Effective Technical Communication"
+           data-meta="Completed October 22, 2023 · LinkedIn Learning · 1 Hour · Certificate ID: 053a8b57511744...">
+        <img src="assets/cert_linkedin.png"
+             alt="LinkedIn Learning Certificate for Tech Career Skills: Effective Technical Communication"
+             class="cert-thumbnail"
+             loading="lazy" />
+        <div class="cert-info">
+          <div class="cert-org">💼 LINKEDIN LEARNING</div>
+          <div class="cert-name">Tech Career Skills: Effective Technical Communication</div>
+          <div class="cert-date">📅 October 22, 2023 · 1 Hour</div>
+        </div>
+        <div class="cert-view-overlay" aria-hidden="true">🔍 VIEW CREDENTIAL</div>
+      </div>
+
+      <!-- Upcoming / Goal Card -->
+      <div class="cert-card reveal reveal-delay-1" style="cursor:default;opacity:0.7;" role="article" aria-label="Upcoming professional certification goal">
+        <div style="width:100%;height:170px;background:linear-gradient(135deg,rgba(0,200,255,0.06),rgba(123,79,255,0.08));display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;border-bottom:1px solid rgba(0,200,255,0.1);">
+          <span style="font-size:2.5rem;" aria-hidden="true">🎯</span>
+          <span style="font-family:var(--font-hud);font-size:0.75rem;letter-spacing:0.15em;color:var(--cyber-teal);">IN PROGRESS</span>
+        </div>
+        <div class="cert-info">
+          <div class="cert-org" style="color:var(--cyber-teal);">🔜 TARGET — 2027</div>
+          <div class="cert-name">Official Cybersecurity Professional Certification</div>
+          <div class="cert-date">🕐 After 1-Year Verified Professional Experience (Ongoing Path)</div>
+        </div>
+      </div>
+
+    </div><!-- /certs-grid -->
+  </div>
+</section>
+
+<!-- ─── Certificate Modal ────────────────────────────────── -->
+<div id="cert-modal" role="dialog" aria-modal="true" aria-label="Certificate viewer" aria-hidden="true">
+  <div id="cert-modal-backdrop" class="cert-modal-backdrop"></div>
+  <div class="cert-modal-inner">
+    <img id="cert-modal-img" src="" alt="Certificate" class="cert-modal-img" />
+    <div class="cert-modal-footer">
+      <div>
+        <div id="cert-modal-name" class="cert-modal-name"></div>
+        <div id="cert-modal-meta" class="cert-modal-meta"></div>
+      </div>
+      <button id="cert-modal-close" class="cert-modal-close" aria-label="Close certificate viewer">✕</button>
+    </div>
+  </div>
+</div>
+</main>
+
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">LSH.CYBER</div>
+      <div class="footer-copy">
+        © 2026 Leslie S. Hular · Blue Team Cybersecurity Analyst · Built with Precision &amp; Purpose
+      </div>
+      <div class="footer-links" role="list">
+        <a href="index.html" role="listitem">Top</a>
+        <a href="field-ops.html" role="listitem">Experience</a>
+        <a href="tto-sim.html" role="listitem">TTO Sim</a>
+        <a href="connect.html" role="listitem">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+<!-- ─── THREE.JS CDN ─────────────────────────────────────────── -->
+<!-- Three.js r134 — no SRI hash to prevent mis-match blocking CDN load -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- ─── EMAILJS CDN ─────────────────────────────────────────── -->
+<!-- Enables contact form to send real emails from a static site  -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+        crossorigin="anonymous"></script>
+
+<script src="js/network-globe.js" defer></script>
+<script src="js/app.js" defer></script>
+
+</body>
+</html>

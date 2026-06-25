@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO -->
+  <title>Leslie S. Hular | Cybersecurity Analyst | Blue Team Portfolio</title>
+  <meta name="description" content="Portfolio of Leslie S. Hular — SOC Analyst, Blue Team Defender, GRC Practitioner & aspiring Accenture Cybersecurity professional. PUP Lopez | Northstar Cyber Management Inc." />
+  <meta name="keywords" content="Leslie Hular, Cybersecurity, SOC Analyst, Blue Team, GRC, WAF, EAS, Northstar, Accenture, BSIT, PUP" />
+  <meta name="author" content="Leslie S. Hular" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Leslie S. Hular | Cybersecurity Analyst Portfolio" />
+  <meta property="og:description" content="Blue Team SOC Analyst passionate about threat detection, GRC compliance, and making the digital world safer." />
+  <meta property="og:type" content="website" />
+
+  <!-- Security Headers -->
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://api.emailjs.com;" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+
+  <!-- Favicon (inline SVG as data URI) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23020810'/><text x='5' y='24' font-size='22'>🛡</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Share+Tech+Mono&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body id="page-tto-sim">
+
+<!-- ─── BACKGROUND ─────────────────────────────────────────── -->
+<div id="bg-grid" aria-hidden="true"></div>
+<canvas id="network-canvas" aria-hidden="true"></canvas>
+
+<!-- ─── NAVBAR ─────────────────────────────────────────────── -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="nav-brand" aria-label="Leslie S. Hular Home">
+    <div class="nav-brand-icon" aria-hidden="true">🛡</div>
+    LSH<span style="color:var(--text-dim);font-weight:400;">.CYBER</span>
+  </a>
+
+  <button id="nav-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <ul class="nav-links" id="nav-links" role="list">
+    <li><a href="intel.html"         data-index="01" aria-label="About section">INTEL</a></li>
+    <li><a href="field-ops.html"    data-index="02" aria-label="Experience section">FIELD OPS</a></li>
+    <li><a href="tto-sim.html" data-index="03" aria-label="TTO Simulator section">TTO SIM</a></li>
+    <li><a href="projects.html"      data-index="04" aria-label="Projects section">PROJECTS</a></li>
+    <li><a href="vault.html"  data-index="05" aria-label="Certificates section">VAULT</a></li>
+    <li><a href="connect.html" class="nav-cta" data-index="06" aria-label="Contact section">CONNECT</a></li>
+  </ul>
+</nav>
+
+<main>
+<section id="tto-simulator" aria-label="Interactive TTO Alert Triage Simulator">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-tag">INTERACTIVE EXPERIENCE</div>
+      <h2 class="section-title">TTO <span>Alert Simulator</span></h2>
+      <p class="section-subtitle">
+        This is the real test. Triage live security alerts across all 5 kill chain stages — 
+        just like Leslie does — in under 60 seconds. Every correct response earns points. Every second counts.
+      </p>
+    </div>
+
+    <div class="tto-outer reveal reveal-delay-1" role="application" aria-label="TTO Alert Triage Game">
+
+      <!-- Window Chrome -->
+      <div class="tto-topbar" aria-hidden="true">
+        <div class="tto-dot red"></div>
+        <div class="tto-dot yellow"></div>
+        <div class="tto-dot green"></div>
+        <span class="tto-title-bar">SOC_TERMINAL — TTO_EXERCISE_v2.6 — LESLIE_S_HULAR</span>
+      </div>
+
+      <div class="tto-body">
+
+        <!-- Main triage area -->
+        <div class="tto-main">
+
+          <div class="tto-intro">
+            <h3>⚡ TIME TO OWN — TRIAGE EXERCISE</h3>
+            <p>
+              At Northstar, every analyst must own an alert in <strong>under 60 seconds</strong> — from receiving
+              the alert to reporting the correct containment action to the client. You are now in the hot seat.
+              Respond correctly across all 5 kill chain stages to achieve ELITE status.
+            </p>
+          </div>
+
+          <!-- Kill Chain Stage Tracker -->
+          <div class="killchain-stages" role="tablist" aria-label="Kill chain stages">
+            <div class="kc-stage" role="tab" aria-label="Stage 1: Initial Access">
+              <span class="kc-num">01</span>INITIAL
+            </div>
+            <div class="kc-stage" role="tab" aria-label="Stage 2: Persistence">
+              <span class="kc-num">02</span>PERSIST.
+            </div>
+            <div class="kc-stage" role="tab" aria-label="Stage 3: Exploration">
+              <span class="kc-num">03</span>EXPLORE
+            </div>
+            <div class="kc-stage" role="tab" aria-label="Stage 4: Propagation">
+              <span class="kc-num">04</span>PROPAGAT.
+            </div>
+            <div class="kc-stage" role="tab" aria-label="Stage 5: Exfiltration">
+              <span class="kc-num">05</span>EXFILTRAT.
+            </div>
+          </div>
+
+          <!-- Alert Display -->
+          <div id="tto-alert-box" class="tto-alert-box" role="alert" aria-live="assertive">
+            <div>
+              <span id="tto-alert-sev" class="alert-severity sev-medium">AWAITING SIMULATION</span>
+            </div>
+            <div id="tto-alert-headline" class="alert-headline">
+              Press "INITIALIZE SIMULATION" to begin the TTO Exercise
+            </div>
+            <p id="tto-alert-detail" class="alert-detail">
+              You will receive 5 sequential security alerts, each corresponding to a kill chain stage.
+              For each alert, choose the best containment / response action within 60 seconds.
+              Your score is based on accuracy and speed — just like the real TTO.
+            </p>
+            <div id="tto-alert-meta" class="alert-meta">
+              <span>DIFFICULTY: <b>INTERMEDIATE</b></span>
+              <span>ALERTS: <b>5 STAGES</b></span>
+              <span>MAX SCORE: <b>500 PTS</b></span>
+            </div>
+          </div>
+
+          <!-- Response Options -->
+          <div class="tto-responses" role="group" aria-label="Response options">
+            <button class="tto-resp-btn" id="resp-0" data-idx="0" disabled aria-label="Response option 1">Select a response...</button>
+            <button class="tto-resp-btn" id="resp-1" data-idx="1" disabled aria-label="Response option 2">—</button>
+            <button class="tto-resp-btn" id="resp-2" data-idx="2" disabled aria-label="Response option 3">—</button>
+            <button class="tto-resp-btn" id="resp-3" data-idx="3" disabled aria-label="Response option 4">—</button>
+          </div>
+
+        </div><!-- /tto-main -->
+
+        <!-- TTO Sidebar -->
+        <div class="tto-sidebar">
+
+          <!-- Progress Ring Timer -->
+          <div class="tto-timer-wrap">
+            <div class="tto-timer-label">TIME REMAINING</div>
+            <div class="tto-progress-ring" aria-label="Timer countdown">
+              <svg width="120" height="120" viewBox="0 0 120 120">
+                <circle class="tto-ring-bg" cx="60" cy="60" r="54" />
+                <circle id="tto-ring-fill" class="tto-ring-fill" cx="60" cy="60" r="54" />
+              </svg>
+              <div class="tto-ring-text">
+                <span id="tto-ring-time" class="tto-ring-time">0:59</span>
+                <span class="tto-ring-unit">SEC</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Score -->
+          <div class="tto-score-panel">
+            <div class="tto-score-label">ANALYST SCORE</div>
+            <div class="tto-score-val">
+              <span id="tto-score" class="counter">0</span>
+              <span class="tto-score-suffix"> / 500</span>
+            </div>
+          </div>
+
+          <!-- Activity Log -->
+          <div id="tto-log" class="tto-log" role="log" aria-live="polite" aria-label="Activity log">
+            <div class="log-entry"><span class="log-ts">[SYSTEM]</span> <span>SOC Terminal v2.6 initialized.</span></div>
+            <div class="log-entry"><span class="log-ts">[SYSTEM]</span> <span>Waiting for operator input...</span></div>
+          </div>
+
+          <!-- Start Button -->
+          <button id="tto-start-btn" class="tto-start-btn" aria-label="Initialize TTO simulation">
+            ▶ INITIALIZE SIMULATION
+          </button>
+
+        </div><!-- /tto-sidebar -->
+
+      </div><!-- /tto-body -->
+    </div><!-- /tto-outer -->
+  </div>
+</section>
+</main>
+
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">LSH.CYBER</div>
+      <div class="footer-copy">
+        © 2026 Leslie S. Hular · Blue Team Cybersecurity Analyst · Built with Precision &amp; Purpose
+      </div>
+      <div class="footer-links" role="list">
+        <a href="index.html" role="listitem">Top</a>
+        <a href="field-ops.html" role="listitem">Experience</a>
+        <a href="tto-sim.html" role="listitem">TTO Sim</a>
+        <a href="connect.html" role="listitem">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+<!-- ─── THREE.JS CDN ─────────────────────────────────────────── -->
+<!-- Three.js r134 — no SRI hash to prevent mis-match blocking CDN load -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- ─── EMAILJS CDN ─────────────────────────────────────────── -->
+<!-- Enables contact form to send real emails from a static site  -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+        crossorigin="anonymous"></script>
+
+<script src="js/network-globe.js" defer></script>
+<script src="js/app.js" defer></script>
+
+</body>
+</html>

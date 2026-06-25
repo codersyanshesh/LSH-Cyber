@@ -33,7 +33,7 @@
   <!-- Main CSS -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body id="page-index">
+<body id="page-field-ops">
 
 <!-- ─── BACKGROUND ─────────────────────────────────────────── -->
 <div id="bg-grid" aria-hidden="true"></div>
@@ -61,101 +61,87 @@
 </nav>
 
 <main>
-<section id="hero" aria-label="Introduction">
+<section id="experience" aria-label="Work experience">
   <div class="container">
-    <div class="hero-inner">
-
-      <!-- LEFT: Text Content -->
-      <div class="hero-left">
-        <div class="hero-status-bar" role="status" aria-live="polite">
-          <span class="status-dot" aria-hidden="true"></span>
-          ACTIVE — ONGOING TRAINING @ NORTHSTAR CYBER
-        </div>
-
-        <h1 class="hero-name">
-          <span class="first">Leslie S.</span>
-          <span class="last glitch" data-text="HULAR">HULAR</span>
-        </h1>
-
-        <div class="hero-title-wrap" aria-label="Role">
-          <span id="typewriter" aria-live="polite"></span>
-        </div>
-
-        <p class="hero-desc">
-          Aspiring Cybersecurity Analyst with hands-on SOC experience at <strong>Northstar Cyber Management Inc.</strong>,
-          supporting threat monitoring, incident investigation, security event analysis, and incident reporting.
-          Experienced in Blue Team operations, Governance, Risk, and Compliance (GRC), and UI/UX design within R&amp;D environments.
-          Adept at combining security, compliance, and user-friendly design to help organizations strengthen their security posture
-          and deliver resilient technology solutions. Committed to continuous learning and professional growth in cybersecurity and web design.
-        </p>
-
-        <div class="hero-badges" role="list" aria-label="Key skills">
-          <span class="badge badge-blue" role="listitem">🛡 Blue Team Defender</span>
-          <span class="badge badge-gold" role="listitem">⚡ SOC Analyst</span>
-          <span class="badge badge-green" role="listitem">✅ GRC Practitioner</span>
-          <span class="badge badge-blue" role="listitem">🔥 WAF / EAS Operations</span>
-          <span class="badge badge-purple" role="listitem">🎓 PUP Lopez — BSIT '26</span>
-          <span class="badge badge-purple" role="listitem">🎨 UI/UX Design</span>
-        </div>
-
-        <div class="hero-ctas">
-          <a href="tto-sim.html" class="btn btn-primary" id="hero-tto-btn" aria-label="Try TTO Simulator">
-            ⚡ TRY TTO SIMULATOR
-          </a>
-          <a href="connect.html" class="btn btn-outline" id="hero-contact-btn" aria-label="Open contact section">
-            📡 OPEN CHANNEL
-          </a>
-        </div>
-      </div><!-- /hero-left -->
-
-      <!-- RIGHT: Profile Card -->
-      <div class="hero-right" aria-hidden="false">
-        <div class="profile-card-wrap">
-
-          <div class="orbit-ring orbit-ring-1" aria-hidden="true">
-            <div class="orbit-dot orbit-dot-blue"></div>
-          </div>
-          <div class="orbit-ring orbit-ring-2" aria-hidden="true">
-            <div class="orbit-dot orbit-dot-gold"></div>
-          </div>
-
-          <div class="profile-card" role="img" aria-label="Leslie S. Hular professional profile photo">
-            <img src="assets/leslie_profile.png"
-                 alt="Leslie S. Hular — Blue Team Cybersecurity Analyst in professional attire"
-                 class="profile-img"
-                 loading="eager" />
-
-            <div class="profile-card-overlay">
-              <div class="profile-card-name">Leslie S. Hular</div>
-              <div class="profile-card-role">SOC ANALYST · BLUE TEAM · GRC</div>
-              <div class="profile-card-stats">
-                <div class="pstat">
-                  <span class="pstat-val counter" data-count="500" data-suffix="h">0h</span>
-                  <span class="pstat-lbl">OJT HOURS</span>
-                </div>
-                <div class="pstat">
-                  <span class="pstat-val counter" data-count="5">0</span>
-                  <span class="pstat-lbl">KILL CHAINS</span>
-                </div>
-                <div class="pstat">
-                  <span class="pstat-val">&lt;60s</span>
-                  <span class="pstat-lbl">TTO REQ.</span>
-                </div>
-              </div>
-            </div>
-          </div><!-- /profile-card -->
-
-        </div><!-- /profile-card-wrap -->
-      </div><!-- /hero-right -->
-
-    </div><!-- /hero-inner -->
-
-    <div class="scroll-indicator" aria-hidden="true">
-      <span>SCROLL</span>
-      <div class="scroll-line"></div>
+    <div class="reveal">
+      <div class="section-tag">FIELD OPERATIONS LOG</div>
+      <h2 class="section-title">Operational <span>Experience</span></h2>
+      <p class="section-subtitle">
+        Real environments. Real threats. Real accountability. Every line on this timeline is a chapter of discipline forged under operational conditions.
+      </p>
     </div>
 
-  </div><!-- /container -->
+    <div class="exp-timeline">
+
+      <!-- ─── Experience 1: Northstar (Current / Ongoing) ─── -->
+      <div class="exp-item reveal">
+        <div class="exp-dot-outer" aria-hidden="true"></div>
+        <div class="exp-card active-role">
+          <div class="exp-header">
+            <div>
+              <div class="exp-role">SOC Analyst Intern → Ongoing Trainee</div>
+              <div class="exp-company">🏢 Northstar Cyber Management Inc. (ATRACaaS)</div>
+              <div class="exp-period">Jan 2026 – Present · Quezon Province, PH</div>
+            </div>
+            <span class="exp-badge-active">ACTIVE</span>
+          </div>
+          <p class="exp-desc">
+            Deployed into a live Security Operations Center managing enterprise client environments.
+            Monitored and responded to security alerts across the 5-stage kill chain taxonomy —
+            Initial Access, Persistence, Exploration, Propagation, and Exfiltration —
+            under a strict <strong>Time To Own (TTO)</strong> requirement of under 60 seconds per alert.
+            Managed WAF (Web Application Firewall) rules and policies, handled EAS (Endpoint Advanced Security)
+            incidents, and produced End-of-Month (EOM) compliance reports under the GRC framework.
+            Additionally contributed to R&D by assisting in the design of the <em>Atrava Defense Site</em>.
+            Completed <strong>500 hours</strong> of OJT and continued training post-internship as part of
+            the apprenticeship pipeline toward full employment.
+          </p>
+          <div class="exp-tags">
+            <span class="exp-tag">SOC Operations</span>
+            <span class="exp-tag">WAF Management</span>
+            <span class="exp-tag">EAS / Endpoint Security</span>
+            <span class="exp-tag gold-tag">GRC · EOM Reports</span>
+            <span class="exp-tag">Alert Triage</span>
+            <span class="exp-tag">Kill Chain Analysis</span>
+            <span class="exp-tag gold-tag">R&D — Atrava Defense</span>
+            <span class="exp-tag">Client Reporting</span>
+            <span class="exp-tag">Sucuri · ESET</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ─── Experience 2: PUP Lopez (Academic) ─── -->
+      <div class="exp-item reveal reveal-delay-1">
+        <div class="exp-dot-outer" aria-hidden="true"></div>
+        <div class="exp-card">
+          <div class="exp-header">
+            <div>
+              <div class="exp-role">4th Year BSIT Student — Cybersecurity Track</div>
+              <div class="exp-company">🎓 Polytechnic University of the Philippines — Lopez, Quezon</div>
+              <div class="exp-period">2022 – September 2026 (Expected Graduation)</div>
+            </div>
+          </div>
+          <p class="exp-desc">
+            Pursuing a Bachelor of Science in Information Technology with a cybersecurity concentration.
+            Developed two significant capstone and personal projects: <strong>KODEX</strong> — a fusion of
+            adaptive typing training and collaborative classroom management — and a personal
+            <strong>CareerGuide</strong> platform tailored for IT students navigating their first steps
+            in the tech industry. Academic studies in networking, systems security, and software development
+            complement hands-on SOC experience.
+          </p>
+          <div class="exp-tags">
+            <span class="exp-tag">Network Security</span>
+            <span class="exp-tag">Software Development</span>
+            <span class="exp-tag gold-tag">Capstone: KODEX</span>
+            <span class="exp-tag gold-tag">Project: CareerGuide</span>
+            <span class="exp-tag">IT Systems Administration</span>
+            <span class="exp-tag">Database Management</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /exp-timeline -->
+  </div>
 </section>
 </main>
 

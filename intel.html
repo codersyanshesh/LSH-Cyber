@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO -->
+  <title>Leslie S. Hular | Cybersecurity Analyst | Blue Team Portfolio</title>
+  <meta name="description" content="Portfolio of Leslie S. Hular — SOC Analyst, Blue Team Defender, GRC Practitioner & aspiring Accenture Cybersecurity professional. PUP Lopez | Northstar Cyber Management Inc." />
+  <meta name="keywords" content="Leslie Hular, Cybersecurity, SOC Analyst, Blue Team, GRC, WAF, EAS, Northstar, Accenture, BSIT, PUP" />
+  <meta name="author" content="Leslie S. Hular" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Leslie S. Hular | Cybersecurity Analyst Portfolio" />
+  <meta property="og:description" content="Blue Team SOC Analyst passionate about threat detection, GRC compliance, and making the digital world safer." />
+  <meta property="og:type" content="website" />
+
+  <!-- Security Headers -->
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://api.emailjs.com;" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+
+  <!-- Favicon (inline SVG as data URI) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23020810'/><text x='5' y='24' font-size='22'>🛡</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Share+Tech+Mono&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body id="page-intel">
+
+<!-- ─── BACKGROUND ─────────────────────────────────────────── -->
+<div id="bg-grid" aria-hidden="true"></div>
+<canvas id="network-canvas" aria-hidden="true"></canvas>
+
+<!-- ─── NAVBAR ─────────────────────────────────────────────── -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="nav-brand" aria-label="Leslie S. Hular Home">
+    <div class="nav-brand-icon" aria-hidden="true">🛡</div>
+    LSH<span style="color:var(--text-dim);font-weight:400;">.CYBER</span>
+  </a>
+
+  <button id="nav-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <ul class="nav-links" id="nav-links" role="list">
+    <li><a href="intel.html"         data-index="01" aria-label="About section">INTEL</a></li>
+    <li><a href="field-ops.html"    data-index="02" aria-label="Experience section">FIELD OPS</a></li>
+    <li><a href="tto-sim.html" data-index="03" aria-label="TTO Simulator section">TTO SIM</a></li>
+    <li><a href="projects.html"      data-index="04" aria-label="Projects section">PROJECTS</a></li>
+    <li><a href="vault.html"  data-index="05" aria-label="Certificates section">VAULT</a></li>
+    <li><a href="connect.html" class="nav-cta" data-index="06" aria-label="Contact section">CONNECT</a></li>
+  </ul>
+</nav>
+
+<main>
+<section id="about" aria-label="About Leslie">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-tag">OPERATOR DOSSIER</div>
+      <h2 class="section-title">Analyst <span>Intelligence</span> Briefing</h2>
+      <p class="section-subtitle">
+        A clear-eyed, mission-driven cybersecurity practitioner — proactive by instinct, reactive by training, relentless by choice.
+      </p>
+    </div>
+
+    <div class="about-grid">
+
+      <!-- Left: Info Panels -->
+      <div>
+        <div class="intel-panel reveal reveal-delay-1" aria-label="Personal identification data">
+          <div class="intel-panel-title">IDENTIFICATION DATA</div>
+          <div class="info-row">
+            <span class="info-label">FULL NAME</span>
+            <span class="info-value">Leslie S. Hular</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">INSTITUTION</span>
+            <span class="info-value highlight">PUP Lopez, Quezon</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">DEGREE</span>
+            <span class="info-value">BS Information Technology</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">YEAR LEVEL</span>
+            <span class="info-value">4th Year (Final Year)</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">EXPECTED GRAD</span>
+            <span class="info-value gold">September 2026</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">SPECIALIZATION</span>
+            <span class="info-value highlight">Cybersecurity — Blue Team</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">CURRENT STATUS</span>
+            <span class="info-value green">Active · Ongoing Training</span>
+          </div>
+        </div>
+
+        <div class="intel-panel reveal reveal-delay-2" style="margin-top:20px;" aria-label="Professional capabilities">
+          <div class="intel-panel-title">CAPABILITY MATRIX</div>
+          <div class="skill-bars">
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-head">
+                <span class="skill-bar-name">Threat Detection & SOC Operations</span>
+                <span class="skill-bar-pct">82%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width:0" data-width="82%"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-head">
+                <span class="skill-bar-name">WAF / Web Application Security</span>
+                <span class="skill-bar-pct">75%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width:0" data-width="75%"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-head">
+                <span class="skill-bar-name">GRC & Compliance Reporting</span>
+                <span class="skill-bar-pct">78%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width:0" data-width="78%"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-head">
+                <span class="skill-bar-name">Endpoint Security (EAS)</span>
+                <span class="skill-bar-pct">72%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width:0" data-width="72%"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-head">
+                <span class="skill-bar-name">Technical Communication & Reporting</span>
+                <span class="skill-bar-pct">88%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill gold-fill" style="width:0" data-width="88%"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-head">
+                <span class="skill-bar-name">Collaboration & Team Operations</span>
+                <span class="skill-bar-pct">92%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill gold-fill" style="width:0" data-width="92%"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Blue Team Pillars -->
+      <div class="reveal reveal-delay-2">
+        <div class="intel-panel" aria-label="Blue team operational pillars">
+          <div class="intel-panel-title">OPERATIONAL PILLARS</div>
+          <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.7;margin-bottom:20px;">
+            More than a student — a practitioner. At Northstar Cyber Management Inc., I operated in
+            a real production SOC environment, handling live client alerts with strict time-based SLAs.
+            Every second counted. Every decision mattered. I learned to carry the weight of
+            accountability — and I thrive under that pressure.
+          </p>
+          <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.7;margin-bottom:24px;">
+            I am both <strong style="color:var(--cyber-teal)">proactive</strong> — hunting threats before they manifest —
+            and <strong style="color:var(--gold-alert)">reactive</strong> — neutralizing confirmed attacks
+            with speed and precision. This dual posture is what Accenture's Security practice demands,
+            and it is exactly what I bring to the table.
+          </p>
+        </div>
+
+        <div class="pillars-grid" role="list">
+          <div class="pillar-card reveal reveal-delay-1" role="listitem">
+            <span class="pillar-icon" aria-hidden="true">⚡</span>
+            <div class="pillar-title">TIME TO OWN</div>
+            <p class="pillar-desc">Sub-60 second alert response across 5 kill chain stages. Precision under pressure is my standard.</p>
+          </div>
+          <div class="pillar-card reveal reveal-delay-2" role="listitem">
+            <span class="pillar-icon" aria-hidden="true">📡</span>
+            <div class="pillar-title">THREAT HUNTING</div>
+            <p class="pillar-desc">Proactively scanning for adversary TTPs across Initial Access through Exfiltration stages.</p>
+          </div>
+          <div class="pillar-card reveal reveal-delay-3" role="listitem">
+            <span class="pillar-icon" aria-hidden="true">🔒</span>
+            <div class="pillar-title">GRC COMPLIANCE</div>
+            <p class="pillar-desc">EOM reports, risk assessments, and governance documentation aligned to organizational standards.</p>
+          </div>
+          <div class="pillar-card reveal reveal-delay-4" role="listitem">
+            <span class="pillar-icon" aria-hidden="true">🤝</span>
+            <div class="pillar-title">TEAM OPERATIONS</div>
+            <p class="pillar-desc">Communication, coordination, and shared accountability — the core of effective SOC teamwork.</p>
+          </div>
+          <div class="pillar-card reveal reveal-delay-1" role="listitem">
+            <span class="pillar-icon" aria-hidden="true">🌐</span>
+            <div class="pillar-title">WEB DEFENSE</div>
+            <p class="pillar-desc">WAF management and endpoint protection operations supporting enterprise-grade client environments.</p>
+          </div>
+          <div class="pillar-card reveal reveal-delay-2" role="listitem">
+            <span class="pillar-icon" aria-hidden="true">📈</span>
+            <div class="pillar-title">GROWTH DRIVEN</div>
+            <p class="pillar-desc">Ongoing training post-OJT, pursuing apprenticeship and professional certifications with full commitment.</p>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /about-grid -->
+  </div>
+</section>
+</main>
+
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">LSH.CYBER</div>
+      <div class="footer-copy">
+        © 2026 Leslie S. Hular · Blue Team Cybersecurity Analyst · Built with Precision &amp; Purpose
+      </div>
+      <div class="footer-links" role="list">
+        <a href="index.html" role="listitem">Top</a>
+        <a href="field-ops.html" role="listitem">Experience</a>
+        <a href="tto-sim.html" role="listitem">TTO Sim</a>
+        <a href="connect.html" role="listitem">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+<!-- ─── THREE.JS CDN ─────────────────────────────────────────── -->
+<!-- Three.js r134 — no SRI hash to prevent mis-match blocking CDN load -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- ─── EMAILJS CDN ─────────────────────────────────────────── -->
+<!-- Enables contact form to send real emails from a static site  -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+        crossorigin="anonymous"></script>
+
+<script src="js/network-globe.js" defer></script>
+<script src="js/app.js" defer></script>
+
+</body>
+</html>

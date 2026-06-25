@@ -33,7 +33,7 @@
   <!-- Main CSS -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body id="page-index">
+<body id="page-projects">
 
 <!-- ─── BACKGROUND ─────────────────────────────────────────── -->
 <div id="bg-grid" aria-hidden="true"></div>
@@ -61,101 +61,90 @@
 </nav>
 
 <main>
-<section id="hero" aria-label="Introduction">
+<section id="projects" aria-label="Projects">
   <div class="container">
-    <div class="hero-inner">
-
-      <!-- LEFT: Text Content -->
-      <div class="hero-left">
-        <div class="hero-status-bar" role="status" aria-live="polite">
-          <span class="status-dot" aria-hidden="true"></span>
-          ACTIVE — ONGOING TRAINING @ NORTHSTAR CYBER
-        </div>
-
-        <h1 class="hero-name">
-          <span class="first">Leslie S.</span>
-          <span class="last glitch" data-text="HULAR">HULAR</span>
-        </h1>
-
-        <div class="hero-title-wrap" aria-label="Role">
-          <span id="typewriter" aria-live="polite"></span>
-        </div>
-
-        <p class="hero-desc">
-          Aspiring Cybersecurity Analyst with hands-on SOC experience at <strong>Northstar Cyber Management Inc.</strong>,
-          supporting threat monitoring, incident investigation, security event analysis, and incident reporting.
-          Experienced in Blue Team operations, Governance, Risk, and Compliance (GRC), and UI/UX design within R&amp;D environments.
-          Adept at combining security, compliance, and user-friendly design to help organizations strengthen their security posture
-          and deliver resilient technology solutions. Committed to continuous learning and professional growth in cybersecurity and web design.
-        </p>
-
-        <div class="hero-badges" role="list" aria-label="Key skills">
-          <span class="badge badge-blue" role="listitem">🛡 Blue Team Defender</span>
-          <span class="badge badge-gold" role="listitem">⚡ SOC Analyst</span>
-          <span class="badge badge-green" role="listitem">✅ GRC Practitioner</span>
-          <span class="badge badge-blue" role="listitem">🔥 WAF / EAS Operations</span>
-          <span class="badge badge-purple" role="listitem">🎓 PUP Lopez — BSIT '26</span>
-          <span class="badge badge-purple" role="listitem">🎨 UI/UX Design</span>
-        </div>
-
-        <div class="hero-ctas">
-          <a href="tto-sim.html" class="btn btn-primary" id="hero-tto-btn" aria-label="Try TTO Simulator">
-            ⚡ TRY TTO SIMULATOR
-          </a>
-          <a href="connect.html" class="btn btn-outline" id="hero-contact-btn" aria-label="Open contact section">
-            📡 OPEN CHANNEL
-          </a>
-        </div>
-      </div><!-- /hero-left -->
-
-      <!-- RIGHT: Profile Card -->
-      <div class="hero-right" aria-hidden="false">
-        <div class="profile-card-wrap">
-
-          <div class="orbit-ring orbit-ring-1" aria-hidden="true">
-            <div class="orbit-dot orbit-dot-blue"></div>
-          </div>
-          <div class="orbit-ring orbit-ring-2" aria-hidden="true">
-            <div class="orbit-dot orbit-dot-gold"></div>
-          </div>
-
-          <div class="profile-card" role="img" aria-label="Leslie S. Hular professional profile photo">
-            <img src="assets/leslie_profile.png"
-                 alt="Leslie S. Hular — Blue Team Cybersecurity Analyst in professional attire"
-                 class="profile-img"
-                 loading="eager" />
-
-            <div class="profile-card-overlay">
-              <div class="profile-card-name">Leslie S. Hular</div>
-              <div class="profile-card-role">SOC ANALYST · BLUE TEAM · GRC</div>
-              <div class="profile-card-stats">
-                <div class="pstat">
-                  <span class="pstat-val counter" data-count="500" data-suffix="h">0h</span>
-                  <span class="pstat-lbl">OJT HOURS</span>
-                </div>
-                <div class="pstat">
-                  <span class="pstat-val counter" data-count="5">0</span>
-                  <span class="pstat-lbl">KILL CHAINS</span>
-                </div>
-                <div class="pstat">
-                  <span class="pstat-val">&lt;60s</span>
-                  <span class="pstat-lbl">TTO REQ.</span>
-                </div>
-              </div>
-            </div>
-          </div><!-- /profile-card -->
-
-        </div><!-- /profile-card-wrap -->
-      </div><!-- /hero-right -->
-
-    </div><!-- /hero-inner -->
-
-    <div class="scroll-indicator" aria-hidden="true">
-      <span>SCROLL</span>
-      <div class="scroll-line"></div>
+    <div class="reveal">
+      <div class="section-tag">THREAT INTELLIGENCE LAB</div>
+      <h2 class="section-title">Built <span>Projects</span></h2>
+      <p class="section-subtitle">
+        Beyond operations — engineering solutions. Each project reflects real-world problem-solving, creative architecture, and a commitment to making tech accessible.
+      </p>
     </div>
 
-  </div><!-- /container -->
+    <div class="projects-grid">
+
+      <!-- KODEX -->
+      <div class="project-card reveal reveal-delay-1" role="article" aria-label="KODEX project">
+        <div class="project-icon-wrap blue-icon" aria-hidden="true">⌨️</div>
+        <h3 class="project-title">KODEX</h3>
+        <div class="project-subtitle">KEYBOARDING OPTIMIZATION DATA ENHANCED EXPERIENCE</div>
+        <p class="project-desc">
+          A capstone project that merges adaptive typing mastery with a collaborative learning management system.
+          KODEX brings together the discipline of <em>Typing Master</em> — speed, accuracy, muscle memory —
+          with the classroom structure of <em>Google Classroom</em>, enabling educators to assign typing exercises,
+          track individual progress, and gamify keyboard proficiency for students.
+        </p>
+        <div class="project-tech">
+          <span class="tech-chip">Web Application</span>
+          <span class="tech-chip">LMS Integration</span>
+          <span class="tech-chip">Gamification</span>
+          <span class="tech-chip">Capstone Project</span>
+          <span class="tech-chip">PUP Lopez</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <span class="badge badge-green" style="font-size:0.65rem;">✅ Completed</span>
+          <span class="badge badge-blue" style="font-size:0.65rem;">🎓 Academic Capstone</span>
+        </div>
+      </div>
+
+      <!-- CareerGuide -->
+      <div class="project-card gold-project reveal reveal-delay-2" role="article" aria-label="CareerGuide project">
+        <div class="project-icon-wrap gold-icon" aria-hidden="true">🗺</div>
+        <h3 class="project-title">CareerGuide for IT</h3>
+        <div class="project-subtitle" style="color:var(--gold-alert);">PERSONAL PROJECT — IT STUDENT CAREER NAVIGATOR</div>
+        <p class="project-desc">
+          A personal initiative born from the challenge of navigating the IT industry as a student with no roadmap.
+          CareerGuide provides aspiring IT professionals with structured career path information, skill recommendations,
+          certification roadmaps, and industry insights — removing the guesswork from career planning and empowering
+          the next generation of Filipino tech workers.
+        </p>
+        <div class="project-tech">
+          <span class="tech-chip">Personal Initiative</span>
+          <span class="tech-chip">Career Development</span>
+          <span class="tech-chip">IT Roadmaps</span>
+          <span class="tech-chip">Student Resource</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <span class="badge badge-gold" style="font-size:0.65rem;">🌟 Personal Project</span>
+          <span class="badge badge-green" style="font-size:0.65rem;">🚀 Self-Initiated</span>
+        </div>
+      </div>
+
+      <!-- Atrava Defense Site -->
+      <div class="project-card reveal reveal-delay-3" role="article" aria-label="Atrava Defense Site project">
+        <div class="project-icon-wrap purple-icon" aria-hidden="true">🔰</div>
+        <h3 class="project-title">Atrava Defense Site</h3>
+        <div class="project-subtitle" style="color:var(--accent-purple);">R&D CONTRIBUTION — NORTHSTAR CYBER MANAGEMENT INC.</div>
+        <p class="project-desc">
+          Collaborated with the R&D division of Northstar Cyber Management Inc. on the design and development
+          of the Atrava Defense Site — an internal security-oriented web platform. This experience extended
+          beyond typical SOC analyst duties, exposing me to the intersection of cybersecurity engineering
+          and product development within a professional environment.
+        </p>
+        <div class="project-tech">
+          <span class="tech-chip">R&D Division</span>
+          <span class="tech-chip">Security Platform</span>
+          <span class="tech-chip">Web Design</span>
+          <span class="tech-chip">Northstar CyberMgmt</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <span class="badge badge-purple" style="font-size:0.65rem;color:var(--accent-purple);border-color:rgba(123,79,255,0.3);background:rgba(123,79,255,0.05);">🔬 R&D Project</span>
+          <span class="badge badge-blue" style="font-size:0.65rem;">🏢 Corporate</span>
+        </div>
+      </div>
+
+    </div><!-- /projects-grid -->
+  </div>
 </section>
 </main>
 

@@ -50,15 +50,17 @@ if (typeof emailjs !== 'undefined' && EMAILJS_PUBLIC_KEY !== 'YOUR_PUBLIC_KEY') 
   window.addEventListener('scroll', () => {
     if (window.scrollY > 40) navbar.classList.add('scrolled');
     else navbar.classList.remove('scrolled');
+  });
 
-    // Active link highlighting
-    let current = '';
-    sections.forEach(sec => {
-      if (window.scrollY >= sec.offsetTop - 100) current = sec.id;
-    });
-    links.forEach(a => {
-      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
-    });
+  // Active link highlighting based on current URL path
+  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+  links.forEach(a => {
+    const href = a.getAttribute('href');
+    if (href === currentPath) {
+      a.classList.add('active');
+    } else {
+      a.classList.remove('active');
+    }
   });
 
   // Mobile toggle
@@ -79,13 +81,8 @@ if (typeof emailjs !== 'undefined' && EMAILJS_PUBLIC_KEY !== 'YOUR_PUBLIC_KEY') 
   }
 })();
 
-/* ─── SMOOTH SCROLL ───────────────────────────────────────── */
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', e => {
-    const target = document.querySelector(a.getAttribute('href'));
-    if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
-  });
-});
+/* ─── SMOOTH SCROLL (REMOVED) ─────────────────────────────── */
+// Removed because navigation is now multi-page.
 
 /* ─── REVEAL ON SCROLL ────────────────────────────────────── */
 (function initReveal() {
