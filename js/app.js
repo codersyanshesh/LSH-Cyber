@@ -84,6 +84,30 @@ if (typeof emailjs !== 'undefined' && EMAILJS_PUBLIC_KEY !== 'YOUR_PUBLIC_KEY') 
 /* ─── SMOOTH SCROLL (REMOVED) ─────────────────────────────── */
 // Removed because navigation is now multi-page.
 
+/* ─── NAV RIPPLE CLICK EFFECT ─────────────────────────────── */
+(function initNavRipple() {
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      // Remove any old ripple
+      const old = this.querySelector('.nav-ripple');
+      if (old) old.remove();
+
+      const rect = this.getBoundingClientRect();
+      const size = Math.max(rect.width, rect.height) * 2;
+      const x = e.clientX - rect.left - size / 2;
+      const y = e.clientY - rect.top - size / 2;
+
+      const ripple = document.createElement('span');
+      ripple.classList.add('nav-ripple');
+      ripple.style.cssText = `width:${size}px;height:${size}px;left:${x}px;top:${y}px;`;
+      this.appendChild(ripple);
+
+      // Clean up after animation finishes
+      ripple.addEventListener('animationend', () => ripple.remove());
+    });
+  });
+})();
+
 /* ─── REVEAL ON SCROLL ────────────────────────────────────── */
 (function initReveal() {
   const revealEls = document.querySelectorAll('.reveal, .reveal-left');
