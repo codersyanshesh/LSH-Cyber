@@ -240,7 +240,7 @@ main { position: relative; z-index: 2; }
 
 section {
   position: relative;
-  padding: 100px 0;
+  padding: 70px 0;
 }
 
 .container {
@@ -282,10 +282,10 @@ section {
 }
 
 .section-subtitle {
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   color: var(--text-secondary);
   max-width: 600px;
-  margin-bottom: 60px;
+  margin-bottom: 32px;
 }
 
 /* ─── HERO SECTION ────────────────────────────────────────── */
